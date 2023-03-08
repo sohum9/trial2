@@ -1,0 +1,19 @@
+name: Hello all
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+  
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: first workflow
+        run: echo "This is my first workflow refferd by RANJEET sir"
+        shell: bash
